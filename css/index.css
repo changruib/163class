@@ -1,0 +1,1587 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #f6f7fb;
+}
+
+
+/*  头部导航栏  */
+#topNav{
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    top: 0;
+    z-index: 999;
+}
+#topNav .topNav_content{
+    width: 1262px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#topNav .topNav_content .logo{
+    float: left;
+    margin-top: 20px;
+}
+#topNav .topNav_content .content_ul{
+    height: 100%;
+    float: left;
+    margin-left: 110px;
+    color: #333;
+}
+#topNav .topNav_content .content_ul li{
+    height: 100%;
+    float: left;
+    line-height: 100px;
+    margin: 0 17px;
+    position: relative;
+}
+#topNav .topNav_content .content_ul li a{
+    height: 100%;
+    color: #818181;
+    font-size: 16px;
+}
+#topNav .topNav_content .content_ul li a:hover{
+    color: #ba525e;
+}
+#topNav .topNav_content .content_ul li span{
+    position: absolute;
+    right: -17px;
+}
+#topNav .topNav_content .game_list{
+    width: 120px;
+    height: 120px;
+    background: url(../image/game-bg.png) no-repeat center 40px #cf1132;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: background-color 0.5s;
+}
+#topNav .topNav_content .active{
+    background: url(../image/banner_active.png) no-repeat center 40px #282b2d;
+}
+#topNav .topNav_content .game_list .text{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 80px;
+    color: white;
+}
+#topNav .topNav_content .content{
+    width: 1260px;
+    height: 0px;
+    background: #282b2d;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    transition: 0.5s;
+    z-index: 20;
+    cursor: auto;
+    overflow: hidden;
+}
+#topNav .topNav_content .content .topTitle{
+    width: 100%;
+    float: left;
+    height: 85px;
+}
+#topNav .topNav_content .content .topTitle p{
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    color: white;
+    float: left;
+    margin: 40px 0 0 65px;
+}
+#topNav .topNav_content .content .topTitle ul{
+    height: 12px;
+    float: right;
+    margin-top: 44px;
+    line-height: 12px;
+    font-size: 12px;
+    color: white;
+    margin-right: 40px;
+}
+#topNav .topNav_content .content .topTitle ul li{
+    float: left;
+    padding-left: 16px;
+    margin-left: 30px;
+}
+#topNav .topNav_content .content .topTitle ul li:first-child{
+    background: url(../image/title_3.png) no-repeat left center;
+}
+#topNav .topNav_content .content .topTitle ul li:last-child{
+    background: url(../image/title_2.png) no-repeat left center;
+}
+
+#topNav .topNav_content .content .bottomIcon{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+}
+#topNav .topNav_content .content .bottomIcon img{
+    position: absolute;
+    left: 50%;
+    margin-left: -34px;
+    cursor: pointer;
+    top: 29px;
+}
+#topNav .topNav_content .content .title{
+    width: 100%;
+    height: 66px;
+    float: left;
+    background-color: #35373a;
+}
+#topNav .topNav_content .content .title h3{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    width: 442px;
+    border-left: 4px solid #dd1b3e;
+    color: #dd1b3e;
+    text-indent: 36px;
+    margin-top: 25px;
+}
+#topNav .topNav_content .content .pcGames{
+    width: 446px;
+    height: 100%;
+    float: left;
+}
+#topNav .topNav_content .content .pcGames .cosplay{
+    width: 298px;
+    height: 614px;
+    float: left;
+    margin-right: -10px;
+}
+#topNav .topNav_content .content .pcGames .cosplay h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#topNav .topNav_content .content .pcGames .cosplay ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 308px;
+}
+#topNav .topNav_content .content .pcGames .cosplay ul li{
+    width: 136px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#topNav .topNav_content .content .pcGames .cosplay ul li:hover a{
+    color: black;
+}
+#topNav .topNav_content .content .pcGames .cosplay ul li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#topNav .topNav_content .content .pcGames .cosplay ul li img{
+    margin: 0 7px 0 3px;
+}
+#topNav .topNav_content .content .pcGames .relaxation{
+    width: 147px;
+    height: 614px;
+    float: left;
+    border-left: 1px solid #424243;
+}
+#topNav .topNav_content .content .pcGames .relaxation h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#topNav .topNav_content .content .pcGames .relaxation ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 100%;
+}
+#topNav .topNav_content .content .pcGames .relaxation ul li{
+    width: 110px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#topNav .topNav_content .content .pcGames .relaxation ul li:hover a{
+    color: black;
+}
+#topNav .topNav_content .content .pcGames .relaxation ul li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#topNav .topNav_content .content .pcGames .relaxation ul li img{
+    margin: 0 7px 0 3px;
+}
+
+#topNav .topNav_content .content .mobileGame{
+    width: 812px;
+    height: 100%;
+    float: left;
+}
+#topNav .topNav_content .content .mobileGame .hotRecommend{
+    width: 177px;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #424243;
+}
+#topNav .topNav_content .content .mobileGame .hotRecommend h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#topNav .topNav_content .content .mobileGame .hotRecommend ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 100%;
+}
+
+#topNav .topNav_content .content .mobileGame .hotRecommend li{
+    width: 110px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#topNav .topNav_content .content .mobileGame .hotRecommend li:hover a{
+    color: black;
+}
+#topNav .topNav_content .content .mobileGame .hotRecommend li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#topNav .topNav_content .content .mobileGame .hotRecommend li img{
+    margin: 0 7px 0 3px;
+}
+#topNav .topNav_content .content .mobileGame .newRecommend{
+    width: 632px;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #424243;
+}
+#topNav .topNav_content .content .mobileGame .newRecommend h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#topNav .topNav_content .content .mobileGame .newRecommend ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 100%;
+}
+#topNav .topNav_content .content .mobileGame .newRecommend ul li{
+    width: 146px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#topNav .topNav_content .content .mobileGame .newRecommend ul li:hover a{
+    color: black;
+}
+#topNav .topNav_content .content .mobileGame .newRecommend ul li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#topNav .topNav_content .content .mobileGame .newRecommend ul li img{
+    margin: 0 7px 0 3px;
+}
+
+
+
+/*  banner  */
+#banner{
+    width: 100%;
+    height: 950px;
+    position: relative;
+    overflow: hidden;
+}
+#banner .banner_last{
+    width: 45px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+    top: 475px;
+    cursor: pointer;
+    background: url(../image/btn-last.png) no-repeat 15px center #cf1631;
+    z-index: 10;
+}
+#banner .banner_last:hover{
+    background-color: #3c3d3f;
+}
+#banner .banner_last .thumbnail{
+    position: absolute;
+    top: 0;
+    left: 45px;
+    border-left: #767878 1px solid;
+    width: 230px;
+    height: 60px;
+    padding: 10px;
+    background: #3c3d3f;
+    display: none;
+    overflow: hidden;
+}
+#banner .banner_last .thumbnail div{
+    width: 80px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+#banner .banner_last .thumbnail div img{
+    width: 100%;
+    height: 100%;
+}
+#banner .banner_last .thumbnail h2{
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+#banner .banner_last .thumbnail h3{
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    overflow: hidden;
+}
+#banner .banner_next{
+    width: 45px;
+    height: 80px;
+    position: absolute;
+    right: 0;
+    top: 475px;
+    cursor: pointer;
+    background: url(../image/btn-next.png) no-repeat 15px center #cf1631;
+    z-index: 10;
+}
+#banner .banner_next:hover{
+    background-color: #3c3d3f;
+}
+#banner .banner_next .thumbnail{
+    position: absolute;
+    top: 0;
+    left: -251px;
+    border-right: #767878 1px solid;
+    width: 230px;
+    height: 60px;
+    padding: 10px;
+    background: #3c3d3f;
+    display: none;
+    overflow: hidden;
+}
+#banner .banner_next .thumbnail div{
+    width: 80px;
+    height: 100%;
+    float: left;
+    margin-right: 10px;
+}
+#banner .banner_next .thumbnail div img{
+    width: 100%;
+    height: 100%;
+}
+#banner .banner_next .thumbnail h2{
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    height: 32px;
+    overflow: hidden;
+}
+#banner .banner_next .thumbnail h3{
+    color: #fff;
+    font-size: 14px;
+    line-height: 28px;
+    height: 28px;
+    overflow: hidden;
+}
+#banner .slider{
+    width: 1262px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    z-index: 9;
+    margin: 560px auto 0px -631px;
+}
+#banner .slider ol{
+    width: 160px;
+    height: 100%;
+    float: right;
+}
+#banner .slider ol li{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: white;
+    margin: 0 5px;
+    float: left;
+    cursor: pointer;
+}
+#banner .slider ol li.active{
+    width: 14px;
+    height: 14px;
+    border: 3px solid white;
+    background: #cf0f32;
+}
+#banner .slider ol li:hover{
+    width: 14px;
+    height: 14px;
+    border: 3px solid white;
+    background: #cf0f32;
+}
+
+
+#banner .banner_ul{
+    min-width: 1260px;
+	max-width: 1920px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+#banner .banner_ul li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    cursor: pointer;
+    transition: 1s;
+}
+#banner .banner_ul li.first_li{
+    background: url(../image/banner1.jpeg) center;
+}
+#banner .banner_ul li.second_li{
+    background: url(../image/banner2.jpg) center;
+    display: none;
+}
+#banner .banner_ul li.third_li{
+    background: url(../image/banner3.jpeg) center;
+    display: none;
+}
+#banner .banner_ul li.fourth_li{
+    background: url(../image/banner4.jpeg) center;
+    display: none;
+}
+#banner .banner_ul li.fifth_li{
+    background: url(../image/banner5.jpeg) center;
+    display: none;
+}
+#banner .banner_ul li .content{
+    width: 1220px;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 42px;
+}
+#banner .banner_ul li .content div{
+    width: 500px;
+    height: 100%;
+    float: left;
+}
+#banner .banner_ul li.second_li .content div{
+    float: right;
+}
+#banner .banner_ul li.fourth_li .content div{
+    float: right;
+}
+#banner .banner_ul li .content h2{
+    font-size: 36px;
+    line-height: 36px;
+    height: 36px;
+    color: white;
+    margin-top: 274px;
+}
+#banner .banner_ul li .content h3{
+    font-size: 36px;
+    line-height: 36px;
+    height: 36px;
+    color: white;
+    margin-top: 16px;
+}
+#banner .banner_ul li .content p{
+    border-top: 1px solid #cf1631;
+    margin-top: 16px;
+    padding-top: 15px;
+    width: 466px;
+    line-height: 24px;
+    font-size: 14px;
+    color: white;
+}
+#banner .banner_ul li .content a{
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgb(207, 15, 50);
+    display: block;
+    color: white;
+    margin-top: 34px;
+}
+
+#banner .banner_news{
+    width: 1260px;
+    height: 350px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -630px;
+    background: #282b2d;
+    z-index: 11;
+}
+#banner .banner_news .banner_news_game{
+    width: 210px;
+    height: 350px;
+    float: left;
+}
+#banner .banner_news .banner_news_game li{
+    width: 100%;
+    height: 70px;
+    position: relative;
+}
+#banner .banner_news .banner_news_game li.active{
+    background: #080909;
+}
+#banner .banner_news .banner_news_game li.active .jt{
+    display: block;
+}
+#banner .banner_news .banner_news_game li:hover{
+    background: #080909;
+}
+#banner .banner_news .banner_news_game li:hover .jt{
+    display: block;
+}
+#banner .banner_news .banner_news_game li:hover .line{
+    display: block;
+}
+#banner .banner_news .banner_news_game li .jt{
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    margin-top: -8px;
+    background: url(../image/sj.png);
+    display: none;
+    z-index: 10;
+}
+#banner .banner_news .banner_news_game li .line{
+    width: 4px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #c50f30;
+    display: none;
+}
+#banner .banner_news .banner_news_game li img{
+    widows: 40px;
+    height: 40px;
+    float: left;
+    margin: 15px 15px 0 16px;
+}
+#banner .banner_news .banner_news_game li .text{
+    width: 139px;
+    height: 100%;
+    float: left;
+}
+#banner .banner_news .banner_news_game li .text h3{
+    font-size: 14px;
+    font-weight: bold;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 18px;
+    color: white;
+}
+#banner .banner_news .banner_news_game li .text h4{
+    font-size: 12px;
+    height: 12px;
+    line-height: 12px;
+    color: #686f74;
+    margin-top: 9px;
+}
+
+#banner .banner_news .banner_news_img{
+    float: left;
+    height: 100%;
+    width: 510px;
+    height: 350px;
+    position: relative;
+}
+#banner .banner_news .banner_news_img li{
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: none;
+}
+#banner .banner_news .banner_news_img li.active{
+    display: block;
+}
+#banner .banner_news .banner_news_title{
+    width: 460px;
+    height: 330px;
+    float: left;
+    position: relative;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 40px;
+}
+#banner .banner_news .banner_news_title .add{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#banner .banner_news .banner_news_title .title{
+    font-size: 24px;
+    line-height: 31px;
+    color: #e20c32;
+    font-weight: bold;
+}
+#banner .banner_news .banner_news_title .recommend{
+    width: 100%;
+    height: 25px;
+    background: url(../image/showTitle.png) no-repeat left top,#333638;
+    line-height: 25px;
+    margin-top: 10px;
+}
+#banner .banner_news .banner_news_title .recommend a{
+    float: left;
+    margin-left: 54px;
+    text-shadow: 0 0 1px black;
+    color: white;
+    font-size: 14px;
+}
+#banner .banner_news .banner_news_title .news_list li{
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    background: url(../image/title-bg.png) no-repeat left center;
+    margin-top: 19px;
+}
+#banner .banner_news .banner_news_title .news_list li:hover a{
+    color: white;
+}
+#banner .banner_news .banner_news_title .news_list li a{
+    color: #c5c5c5;
+    float: left;
+    margin-left: 24px;
+}
+#banner .banner_news .banner_news_title .news_list li span{
+    float: right;
+    color: #7c7b7b;
+}
+
+
+
+
+/*   新闻模块   */
+#newsTab{
+    width: 1260px;
+    height: 130px;
+    margin: 40px auto;
+}
+#newsTab .newsTab_ul{
+    width: 100%;
+    height: 100%;
+}
+#newsTab .newsTab_ul li{
+    width: 300px;
+    height: 100%;
+    float: left;
+    margin-right: 20px;
+    position: relative;
+}
+#newsTab .newsTab_ul li:last-child{
+    margin-right: 0;
+}
+#newsTab .newsTab_ul li:hover .line{
+    width: 40px;
+}
+#newsTab .newsTab_ul li a{
+    width: 300px;
+    height: 100%;
+    float: left;
+}
+#newsTab .newsTab_ul li img{
+    width: 300px;
+    height: 130px;
+}
+#newsTab .newsTab_ul li .line{
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    top: 19px;
+    left: 16px;
+    background: #ea4443;
+    transition: 0.3s;
+    z-index: 11;
+}
+#newsTab .newsTab_ul li .fade{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#newsTab .newsTab_ul li:hover .fade{
+    animation: toWrite 0.2s;
+}
+@keyframes toWrite{
+    0%{
+        background: rgba(255, 255, 255, 0);
+    }
+    50%{
+        background: rgba(255, 255, 255, 0.6);
+    }
+    100%{
+        background: rgba(255, 255, 255, 1);
+    }
+}
+
+
+
+/*  官方社群   */
+#officialGroup{
+    width: 1260px;
+    height: 232px;
+    margin: 0 auto;
+}
+#officialGroup .title{
+    width: 200px;
+    height: 22px;
+    font-size: 22px;
+    line-height: 22px;
+    text-indent: 20px;
+    color: black;
+    border-left: 4px solid #cc0225;
+}
+#officialGroup .content{
+    width: 100%;
+    height: 180px;
+    margin-top: 30px;
+    position: relative;
+}
+#officialGroup .content .leftSlide{
+    height: 178px;
+    width: 940px;
+    float: left;
+    border: 1px solid #e6e5e6;
+    overflow: hidden;
+}
+#officialGroup .content .leftSlide .last{
+    float: left;
+    width: 65px;
+    height: 100%;
+    background: url(../image/group_last.png) no-repeat center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#officialGroup .content .leftSlide .next{
+    float: right;
+    width: 65px;
+    height: 100%;
+    background: url(../image/group_next.png) no-repeat center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#officialGroup .content .leftSlide .last:hover{
+    background: url(../image/group_last_hover.png) no-repeat center;
+}
+#officialGroup .content .leftSlide .next:hover{
+    background: url(../image/group_next_hover.png) no-repeat center;
+}
+#officialGroup .content .leftSlide .center{
+    width: 810px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+#officialGroup .content .leftSlide ul{
+    width: 810px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 1s;
+}
+#officialGroup .content .leftSlide ul>li{
+    width: 810px;
+    height: 100%;
+    overflow: hidden;
+    transition: 1s;
+    float: left;
+    /* display: none; */
+}
+#officialGroup .content .leftSlide ul>li.active{
+    display: block;
+}
+#officialGroup .content .leftSlide ul>li ol{
+    width: 810px;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+#officialGroup .content .leftSlide ul>li ol>li{
+    width: 162px;
+    height: 100%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}
+#officialGroup .content .leftSlide ul>li ol>li.active{
+    background: #eff0f4;
+}
+#officialGroup .content .leftSlide ul>li ol>li img{
+    width: 90px;
+    height: 90px;
+    margin: 33px 0 0 36px;
+}
+#officialGroup .content .leftSlide ul>li ol>li img.active{
+    transform: translateX(-15px);
+}
+#officialGroup .content .leftSlide ul>li ol>li .text{
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+    text-align: center;
+    color: black;
+}
+#officialGroup .content .leftSlide ul>li ol>li .text.active{
+    transform: translateX(-15px);
+}
+#officialGroup .content .leftSlide ul>li ol>li .addGroup{
+    width: 32px;
+    height: 122px;
+    background-color: #af3b44;
+    position: absolute;
+    right: 10px;
+    top: 25px;
+    border-radius: 16px;
+    transition: 0.2s;
+    opacity: 0;
+}
+#officialGroup .content .leftSlide ul>li ol>li .addGroup.active{
+    opacity: 1;
+}
+#officialGroup .content .leftSlide ul>li ol>li .addGroup p{
+    width: 14px;
+    font-size: 14px;
+    float: left;
+    color: white;
+    margin: 22px 0 0 9px;
+}
+#officialGroup .content .rightCode{
+    width: 300px;
+    height: 180px;
+    float: right;
+    margin-left: 16px;
+    background: url(../image/ewm.png);
+    overflow: hidden;
+}
+#officialGroup .content .rightCode:hover div{
+    transform: translateY(0);
+}
+#officialGroup .content .rightCode div{
+    width: 100%;
+    height: 100%;
+    background: url(../image/code.png) no-repeat center, rgba(0, 0, 0, 0.4);
+    transform: translateY(-100%);
+    transition: 0.3s;
+}
+
+
+
+
+/* 热门游戏与新游测试 */
+#games{
+    width: 1260px;
+    height: 728px;
+    margin: 40px auto;
+}
+#hotgames{
+    width: 962px;
+    height: 100%;
+    float: left;
+}
+#hotgames .title{
+    width: 938px;
+    height: 22px;
+    font-size: 22px;
+    line-height: 22px;
+    text-indent: 20px;
+    color: black;
+    border-left: 4px solid #cc0225;
+    position: relative;
+}
+#hotgames .title span{
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px;
+    background: url(../image/zhuan.png) no-repeat right top;
+    padding-right: 31px;
+    cursor: pointer;
+}
+#hotgames .gameList{
+    width: 100%;
+    height: 656px;
+    margin-top: 30px;
+    display: none;
+}
+#hotgames .gameList.active{
+    display: block;
+}
+#hotgames .gameList li{
+    width: 300px;
+    height: 318px;
+    float: left;
+    background-color: #ffffff;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+#hotgames .gameList li.scale{
+    transform: scale(0);
+}
+#hotgames .gameList li .pic:hover>div{
+    transform: translateY(0);
+}
+#hotgames .gameList li .pic{
+    width: 100%;
+    height: 170px;
+}
+#hotgames .gameList li .pic>div{
+    width: 100%;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(255, 0, 0, 0.8);
+    cursor: pointer;
+    transform: translateY(-100%);
+    transition: 0.2s;
+}
+#hotgames .gameList li .pic>div img{
+    border-radius: 5px;
+    float: left;
+    margin: 45px 16px 0 15px;
+}
+#hotgames .gameList li .pic>div .text{
+    width: 185px;
+    height: 100%;
+    float: left;
+}
+#hotgames .gameList li .pic>div .text h3{
+    font-size: 14px;
+    line-height: 14px;
+    color: #f9f2f2;
+    margin-top: 50px;
+    font-weight: bold;
+}
+#hotgames .gameList li .pic>div .text h4{
+    font-size: 14px;
+    line-height: 14px;
+    color: #f9f2f2;
+    margin-top: 13px;
+    font-weight: bold;
+    text-indent: 18px;
+    background: url(../image/down_load.png) no-repeat left center;
+}
+#hotgames .gameList li h2{
+    height: 19px;
+    font-size: 19px;
+    line-height: 19px;
+    margin-top: 20px;
+    text-indent: 16px;
+}
+#hotgames .gameList li div{
+    height: 52px;
+    width: 268px;
+    font-style:  "Microsoft YaHei";
+    border-bottom: 1px solid #efefef;
+    margin: 0 auto;
+    color: #ababab;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 7px 2px;
+    overflow: hidden;
+}
+#hotgames .gameList li .enter{
+    position: absolute;
+    right: 20px;
+    bottom: 16px;
+    font-size: 12px;
+    color: #a4a4a4;
+    padding-right: 21px;
+    background: url(../image/right-jt.png) no-repeat right center;
+}
+
+#newgames{
+    width: 298px;
+    height: 100%;
+    float: left;
+}
+#newgames .title{
+    width: 100%;
+    height: 22px;
+    font-size: 22px;
+    line-height: 22px;
+    text-indent: 20px;
+    color: black;
+    border-left: 4px solid #cc0225;
+}
+#newgames .icon{
+    width: 100%;
+    height: 108px;
+    float: left;
+    margin-top: 30px;
+}
+#newgames ul{
+    width: 100%;
+    height: 555px;
+    float: left;
+}
+#newgames ul li{
+    width: 296px;
+    height: 110px;
+    float: left;
+    border: 1px solid #efefef;
+    border-top: none;
+    transition: 0.5s;
+    background: url(../image/group_next.png) no-repeat 262px center,white;
+}
+#newgames ul li:hover{
+    background: url(../image/group_next_hover.png) no-repeat 262px center,#f0f2f7;
+}
+#newgames ul li a{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+#newgames ul li a img{
+    width: 68px;
+    height: 68px;
+    margin: 22px 22px 0 26px;
+    float: left;
+}
+#newgames ul li a div{
+    height: 100%;
+    
+    float: left;
+}
+#newgames ul li a div h2{
+    height: 15px;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top: 26px;
+    color: #222222;
+}
+#newgames ul li a div h3{
+    font-size: 14px;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 8px;
+    color: #787878;
+}
+#newgames ul li a div h4{
+    height: 15px;
+    font-size: 12px;
+    line-height: 15px;
+    color: #8a8a8a;
+    background: url(../image/clock.png) no-repeat left center;
+    text-indent: 21px;
+    margin-top: 11px;
+}
+
+
+
+/*   游戏树导航   */
+#gameTree{
+    width: 1260px;
+    height: 614px;
+    margin: 83px auto 0;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+}
+#gameTree .readMore{
+    width: 100%;
+    height: 155px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+}
+#gameTree .readMore .center{
+    width: 137px;
+    height: 100%;
+    margin: 0 auto;
+}
+#gameTree .readMore .center .button{
+    width: 120px;
+    height: 38px;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 38px;
+    color: #737373;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 40px auto 0;
+}
+#gameTree .readMore .center ul{
+    margin-top: 23px;
+    width: 100%;
+}
+#gameTree .readMore .center ul li{
+    float: left;
+    font-size: 12px;
+    line-height: 12px;
+    height: 12px;
+    color: #717171;
+}
+#gameTree .readMore .center ul li.hot_games{
+    background: url(../image/title_2.png) no-repeat left center;
+    padding-left: 16px;
+    margin-right: 5px;
+}
+#gameTree .readMore .center ul li.new_games{
+    background: url(../image/title_3.png) no-repeat left center;
+    padding-left: 16px;
+}
+#gameTree .title{
+    width: 100%;
+    height: 66px;
+    background-color: #fbfbfb;
+    float: left;
+}
+#gameTree .title h3{
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    width: 442px;
+    border-left: 4px solid #dd1b3e;
+    text-indent: 36px;
+    margin-top: 25px;
+}
+#gameTree #pcGames{
+    width: 446px;
+    height: 100%;
+    float: left;
+}
+#gameTree #pcGames .cosplay{
+    width: 298px;
+    height: 614px;
+    float: left;
+    margin-right: -10px;
+}
+#gameTree #pcGames .cosplay h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#gameTree #pcGames .cosplay ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 308px;
+}
+#gameTree #pcGames .cosplay ul li{
+    width: 136px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#gameTree #pcGames .cosplay ul li:hover a{
+    color: black;
+}
+#gameTree #pcGames .cosplay ul li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#gameTree #pcGames .cosplay ul li img{
+    margin: 0 7px 0 3px;
+}
+#gameTree #pcGames .relaxation{
+    width: 147px;
+    height: 614px;
+    float: left;
+    border-left: 1px solid #efefef;
+}
+#gameTree #pcGames .relaxation h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#gameTree #pcGames .relaxation ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 100%;
+}
+#gameTree #pcGames .relaxation ul li{
+    width: 110px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#gameTree #pcGames .relaxation ul li:hover a{
+    color: black;
+}
+#gameTree #pcGames .relaxation ul li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#gameTree #pcGames .relaxation ul li img{
+    margin: 0 7px 0 3px;
+}
+
+#gameTree #mobileGame{
+    width: 812px;
+    height: 100%;
+    float: left;
+}
+#gameTree #mobileGame .hotRecommend{
+    width: 177px;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #efefef;
+}
+#gameTree #mobileGame .hotRecommend h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#gameTree #mobileGame .hotRecommend ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 100%;
+}
+
+#gameTree #mobileGame .hotRecommend li{
+    width: 110px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#gameTree #mobileGame .hotRecommend li:hover a{
+    color: black;
+}
+#gameTree #mobileGame .hotRecommend li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#gameTree #mobileGame .hotRecommend li img{
+    margin: 0 7px 0 3px;
+}
+#gameTree #mobileGame .newRecommend{
+    width: 632px;
+    height: 100%;
+    float: left;
+    border-left: 1px solid #efefef;
+}
+#gameTree #mobileGame .newRecommend h2{
+    width: 100%;
+    font-size: 14px;
+    color: #c21d35;
+    text-indent: 38px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+#gameTree #mobileGame .newRecommend ul{
+    margin-top: 20px;
+    padding-left: 36px;
+    width: 100%;
+}
+#gameTree #mobileGame .newRecommend ul li{
+    width: 146px;
+    height: 28px;
+    float: left;
+    margin-bottom: 15px;
+}
+#gameTree #mobileGame .newRecommend ul li:hover a{
+    color: black;
+}
+#gameTree #mobileGame .newRecommend ul li a{
+    font-size: 14px;
+    line-height: 28px;
+    color: #666;
+    font-family: "微软雅黑";
+}
+#gameTree #mobileGame .newRecommend ul li img{
+    margin: 0 7px 0 3px;
+}
+
+
+
+/*    服务链接   */
+#serveLink{
+    width: 1260px;
+    height: 340px;
+    margin: 0 auto;
+}
+#serveLink .serveHelper{
+    width: 150px;
+    float: left;
+    height: 238px;
+    margin-right: 16px;
+}
+#serveLink .serveHelper h2{
+    width: 100%;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #7b7b7a;
+    text-indent: 30px;
+    background: url(../image/links.png) no-repeat 0px 5px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#serveLink .serveHelper a{
+    width: 150px;
+    height: 80px;
+    float: left;
+    background-color: #e3e3e3;
+    margin-bottom: 2px;
+    transition: 0.5s;
+}
+#serveLink .serveHelper a:hover{
+    background-color: #cf0f32;
+}
+#serveLink .serveHelper a:hover h3{
+    color: white;
+}
+#serveLink .serveHelper a:hover h4{
+    color: white;
+}
+#serveLink .serveHelper a h3{
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 15px;
+    height: 15px;
+    margin-top: 18px;
+    margin-bottom: 17px;
+    transition: 0.5s;
+}
+#serveLink .serveHelper a h4{
+    width: 100%;
+    font-size: 12px;
+    color: #9a9a9a;
+    text-align: center;
+    line-height: 12px;
+    height: 12px;
+    transition: 0.5s;
+}
+
+#serveLink .gameMixed{
+    width: 762px;
+    height: 238px;
+    float: left;
+}
+#serveLink .gameMixed h2{
+    width: 100%;
+    height: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    color: #7b7b7a;
+    text-indent: 30px;
+    background: url(../image/links.png) no-repeat 0px 5px;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+#serveLink .gameMixed a{
+    width: 150px;
+    height: 80px;
+    float: left;
+    background-color: #e3e3e3;
+    margin-bottom: 2px;
+    margin-right: 2px;
+    transition: 0.5s;
+}
+#serveLink .gameMixed a:hover{
+    background-color: #cf0f32;
+}
+#serveLink .gameMixed a:hover h3{
+    color: white;
+}
+#serveLink .gameMixed a:hover h4{
+    color: white;
+}
+#serveLink .gameMixed a h3{
+    width: 100%;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    line-height: 15px;
+    height: 15px;
+    margin-top: 18px;
+    margin-bottom: 17px;
+    transition: 0.5s;
+}
+#serveLink .gameMixed a h4{
+    width: 100%;
+    font-size: 12px;
+    color: #9a9a9a;
+    text-align: center;
+    line-height: 12px;
+    height: 12px;
+    transition: 0.5s;
+}
+
+#serveLink .userService{
+    width: 556px;
+    height: 102px;
+    float: left;
+}
+#serveLink .userService h5{
+    font-size: 14px;
+    color: #3c3937;
+    height: 100%;
+    line-height: 102px;
+    float: left;
+}
+#serveLink .userService ul{
+    height: 14px;
+    margin: 44px 10px;
+    float: left;
+}
+#serveLink .userService ul li{
+    float: left;
+    line-height: 14px;
+    height: 14px;
+    font-size: 12px;
+}
+#serveLink .userService ul li:hover.service a{
+    color: #cf1132;
+}
+#serveLink .userService ul li a{
+    color: #838383;
+}
+#serveLink .userService ul li.line{
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+#serveLink .phoneNumber{
+    width: 200px;
+    height: 18px;
+    float: right;
+    margin-top: 38px;
+}
+#serveLink .phoneNumber span{
+    float: left;
+    font-size: 14px;
+    color: #454240;
+}
+
+
+
+/*  footer  */
+#footer{
+    width: 100%;
+    height: 171px;
+    background-color: #272a2c;
+}
+#footer .content{
+    width: 1104px;
+    height: 100%;
+    margin: 0 auto;
+}
+#footer .content .content_top{
+    width: 100%;
+    float: left;
+    height: 38px;
+    margin-top: 38px;
+    margin-bottom: 12px;
+}
+#footer .content .content_top .logo{
+    width: 304px;
+    height: 100%;
+    float: left;
+    margin-top: 3px;
+}
+#footer .content .content_top .logo a{
+    float: left;
+}
+#footer .content .content_top .text{
+    width: 800px;
+    float: left;
+    height: 100%;
+}
+#footer .content .content_top .text ul{
+    float: left;
+    width: 100%;
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    margin-top: 13px;
+}
+#footer .content .content_top .text ul li{
+    float: left;
+    color: white;
+    margin-right: 5px;
+}
+#footer .content .content_top .text ul li a{
+    color: white;
+}
+#footer .content .content_top .text ul li:hover a{
+    text-decoration: underline;
+}
+#footer .content p{
+    height: 12px;
+    line-height: 12px;
+    font-size: 12px;
+    float: left;
+    width: 100%;
+    color: white;
+    margin-top: 12px;
+}
+#footer .content p a{
+    color: white;
+}
+#footer .content p a:hover{
+    text-decoration: underline;
+}
